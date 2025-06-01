@@ -1,0 +1,2 @@
+
+    virtual ~IMessageService() = default;
