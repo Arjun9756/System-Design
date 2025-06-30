@@ -14,7 +14,7 @@ private:
     }
 
 public:
-    static Singleton *getInstance(){
+    static Singleton *getInstance(){ 
         return instance;
     }
 };
