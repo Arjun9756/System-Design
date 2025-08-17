@@ -50,4 +50,7 @@ int main()
 
     string title = "Design Pattern in C++";
     cout << "Client Got JSON Data: " << report->getJSONData(title) << endl;
+
+    delete xmlProvider;
+    delete report;
 }
