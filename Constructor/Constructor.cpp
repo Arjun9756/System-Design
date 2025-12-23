@@ -46,7 +46,7 @@ public:
     }
 
     Database(const Database &) = delete;
-    Database& operator=(const Database&) = delete;
+    Database& operator=(const Database&) = delete;  // Assingment pe delete
 };
 
 class Constructor{
