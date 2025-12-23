@@ -32,6 +32,23 @@ using namespace std;
   *         refernce of object that firstly created.
   */
 
+class Database{
+private:
+    string connectionString = "backen-service:port=12000";
+    Database *d1;
+    Database(){
+        cout<<"Private Constructor \n";
+    }
+public:
+    static Database& getObject(){
+        static Database instance;
+        return instance;
+    }
+
+    Database(const Database &) = delete;
+    Database& operator=(const Database&) = delete;
+};
+
 class Constructor{
 public:
     // Default Constructor
