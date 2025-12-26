@@ -12,12 +12,14 @@ using namespace std;
  * 
  * It also uses for the method chaining
  * When ever we call like obj->method(); actualy c++ send it like this method(&obj , parameters)  obj is this pointer
+ * One thing Always Remeber That this pointer not works with static function even though wo class variable ko bhi access nhi kr skte h 
  */
 
 class Demo{
 public:
     string name;
     int count = 0;
+    static int staticvar;
 
     void setName(string name){
         // name = name;  create confusion who is which one
@@ -28,11 +30,18 @@ public:
         cout<<++count<<" ";
         return this;
     }
+
+    static int getCount(){
+        return staticvar;
+    }
 };
+
+int Demo::staticvar=0;
 
 int main()
 {
     Demo *d1 = new Demo();
     d1->setName("hsuk");
     d1->counter()->counter();    // Method Chaining 
+    cout<<Demo::getCount();
 }
