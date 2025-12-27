@@ -13,10 +13,40 @@
  * Virtual Function Ensures The Runtime Polymorphism
  * But Virtual in Case of Inheritance tells that only one copy of parent class will be shared to that class who is inheriting it if they create a chain of 
  * inheritance then also one copy 
+ * 
+ * Inheritance is (is a relation) Say Like Animal <-- Dog then Dog is a Animal or Animal <-- Cow then cow is animal (is a)
+ * Solution of Inheirtance is not more inheritance everytime for exmaple Bank class now inheirt by two class saving and current 
+ * saving class increase level of inheitance private customer , public customer , currennt class private , public customer
+ * now public customer class of both increases level of rural , urban basically for every inheritance solution to inheirtnace is not more inheirtance insead we 
+ * should go for composition Like 
+ * 
+ * Class CustomerType (private , public)
+ * AccountType (saving , current)
+ * Location (rural , urban)
+ * 
+ * now create Object of Account ()
  */
 
 #include <bits/stdc++.h>
 using namespace std;
+
+// Problem of Inheritance Explodes of Inheirtance .....
+class Account{};
+class savingAccount : public Account{};
+class currentAccount : public Account{};
+class Customer{};
+class publicCustomer:public Customer{};
+class privateCustomer:public Customer{};
+class Area{};
+class ruralArea:public Area{};
+class urbanArea:public Area{};
+
+// Cleaner Version
+class CustomerType{};
+class Location{};
+class AccountType{}; 
+
+// That's All
 
 class A{
 public:
