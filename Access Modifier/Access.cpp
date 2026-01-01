@@ -25,6 +25,6 @@ int main()
 {
     AccessModifier *a1 = new AccessModifier();
     a1->publicValue = 90; // allowed
-    a1->protectedValue = 32; // not allowed
-    a->privateValue = 77;        // not allowed
+    // a1->protectedValue = 32; // not allowed
+    // a->privateValue = 77;        // not allowed
 }
