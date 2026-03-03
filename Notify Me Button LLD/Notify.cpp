@@ -203,7 +203,7 @@ public:
         int productId = d1->productById[notify.productId].getId();
 
         if(isActive && email.length() && productName.length() && productId){
-            cout<<"Push Notification Sent To "<<userName<<" Regarding Product "<<productName<<" Is Not in Stock \n";
+            cout<<"Push Notification Sent To "<<userName<<" Regarding Product "<<productName<<" Is Now in Stock \n";
         }else{
             cout<<"No Push Notification Service is Found Error 501 \n";
         }
@@ -222,7 +222,7 @@ public:
         int productId = d1->productById[notify.productId].getId();
 
         if(isActive && email.length() && productName.length() && productId){
-            cout<<"SMS Notification Sent To "<<userName<<" Regarding Product "<<productName<<" Is Not in Stock \n";
+            cout<<"SMS Notification Sent To "<<userName<<" Regarding Product "<<productName<<" Is Now in Stock \n";
         }else{
             cout<<"No SMS Notification Service Found Error 501 \n";
         }
@@ -241,7 +241,7 @@ public:
         int productId = d1->productById[notify.productId].getId();
 
         if(isActive && email.length() && productName.length() && productId){
-            cout<<"WhatsApp Notification Sent To "<<userName<<" Regarding Product "<<productName<<" Is Not in Stock \n";
+            cout<<"WhatsApp Notification Sent To "<<userName<<" Regarding Product "<<productName<<" Is Now in Stock \n";
         }else{
             cout<<"No WhatsApp Notification Service Found Error 501 \n";
         }
